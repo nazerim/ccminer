@@ -40,7 +40,7 @@ static double linux_cputemp(int core)
 }
 
 #define CPUFREQ_PATH \
- "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_cur_freq"
+ "/sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq"
 static uint32_t linux_cpufreq(int core)
 {
 	FILE *fd = fopen(CPUFREQ_PATH, "r");
